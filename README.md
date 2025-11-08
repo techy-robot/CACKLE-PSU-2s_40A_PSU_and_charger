@@ -1,8 +1,12 @@
 ---
-modified: 2025-01-12T19:11:32-07:00
+modified: 2025-11-07T22:09:08-07:00
 ---
 
 # 2s 40A PSU and charger
+
+> [!TIP]
+> This board is part of a larger modular control board ecosystem, [CACKLE](https://github.com/techy-robot/CACKLE)
+
 
 This is a rather complex power supply unit. It supports USB-C Power Delivery at 9volt 2 amps, and can charge a 2 cell lipo battery. It can pump out 40 amps if the battery supports the current. It also had battery protection and balancing built in, and a RS485 communication unit that can translate USB or SPI data to RS485.
 
