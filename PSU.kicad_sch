@@ -926,6 +926,46 @@
 		)
 		(uuid "c762367a-fc87-4bb5-859c-532437fed7a9")
 	)
+	(text_box "32v input, 2A 3.3v out"
+		(exclude_from_sim no)
+		(at 200.025 59.055 0)
+		(size 33.02 4.445)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "5f28dac7-f4c2-451d-bb7e-eeeea445a043")
+	)
+	(text_box "Inductor calculation: L = (V_OUT * (V_IN - V_OUT)) / (V_IN * Delta_I_L * f_sw)\n\nPeak Inductance: I_L_PEAK = I_LOAD + (Delta_I_L / 2)\n\nInputs:\nDelta_I_L 35% of max current 2 amps: 0.7.\nf_sw: 1.1mhz\nV_IN: 9v\n\nValues:\n2.7uH value\n2.35+ A peak current\n<100mO resistance"
+		(exclude_from_sim no)
+		(at 233.045 17.145 0)
+		(size 36.195 38.1)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "a2ea1d89-68ba-4be5-9624-e57619097247")
+	)
 	(text_box "18v input, 2x2mm package, 500ma 3.3v out"
 		(exclude_from_sim no)
 		(at 104.14 49.53 0)
@@ -1644,7 +1684,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2uH, WIP322512A-2R2MLDG"
+		(property "Value" "2.7uH"
 			(at 234.95 73.914 90)
 			(effects
 				(font
@@ -1679,7 +1719,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C5832372"
+		(property "LCSC" ""
 			(at 232.41 76.2 90)
 			(effects
 				(font
