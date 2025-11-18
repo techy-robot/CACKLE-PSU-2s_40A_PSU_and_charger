@@ -1,7 +1,7 @@
 {
   "board": {
-    "active_layer": 33,
-    "active_layer_preset": "All Layers",
+    "active_layer": 0,
+    "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
     "hidden_nets": [],
@@ -91,7 +91,20 @@
       10,
       11
     ],
-    "col_widths": [],
+    "col_widths": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
     "custom_group_rules": [],
     "expanded_rows": [],
     "filter_by_net_name": true,
@@ -102,26 +115,26 @@
     "show_unconnected_nets": false,
     "show_zero_pad_nets": false,
     "sort_ascending": true,
-    "sorting_column": -1
+    "sorting_column": 0
   },
   "open_jobsets": [],
   "project": {
     "files": [
       {
         "name": "2s 40A PSU and charger.kicad_pcb",
-        "open": true,
+        "open": false,
         "window": {
           "display": 0,
           "maximized": true,
           "pos_x": 0,
           "pos_y": 96,
           "size_x": 1280,
-          "size_y": 532
+          "size_y": 478
         }
       },
       {
         "name": "2s 40A PSU and charger.kicad_sch",
-        "open": true,
+        "open": false,
         "window": {
           "display": 0,
           "maximized": true,
