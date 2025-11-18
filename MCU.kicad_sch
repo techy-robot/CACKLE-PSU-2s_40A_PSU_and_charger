@@ -2008,7 +2008,7 @@
 	)
 	(text "PB1 and PB5 are tied internally"
 		(exclude_from_sim no)
-		(at 90.424 75.946 0)
+		(at 84.328 67.818 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2118,7 +2118,7 @@
 	)
 	(text_box "PWRON triggers the charger Adaptor detector which enables the FETs"
 		(exclude_from_sim no)
-		(at 71.12 78.74 0)
+		(at 49.53 71.12 0)
 		(size 27.94 8.89)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2209,12 +2209,6 @@
 		(uuid "2381da24-0d9d-46ab-a696-4fd1dc23f5a8")
 	)
 	(junction
-		(at 114.3 83.82)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "57eb9fb6-4861-454b-8d62-5800cda30cbd")
-	)
-	(junction
 		(at 140.97 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2262,6 +2256,12 @@
 		(color 0 0 0 0)
 		(uuid "df40d68c-cd8c-47a2-b4d6-46fdfbe36a10")
 	)
+	(junction
+		(at 95.25 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e39a547e-60e7-404a-a105-15664f5bfc76")
+	)
 	(no_connect
 		(at 123.19 109.22)
 		(uuid "3abbaee4-a9bb-45ba-aa31-77021b56a48e")
@@ -2271,12 +2271,12 @@
 		(uuid "41db57c7-ab7c-4772-8900-7b04980f5c9d")
 	)
 	(no_connect
-		(at 123.19 106.68)
-		(uuid "a65bcce2-3901-46c9-8362-3400c5c7b8b4")
+		(at 123.19 99.06)
+		(uuid "798392de-2d68-4ca7-a305-a09c992b616c")
 	)
 	(no_connect
-		(at 123.19 86.36)
-		(uuid "b29802db-c91a-49f2-b4a3-a1bba01cecd5")
+		(at 123.19 106.68)
+		(uuid "a65bcce2-3901-46c9-8362-3400c5c7b8b4")
 	)
 	(no_connect
 		(at 123.19 88.9)
@@ -2302,23 +2302,13 @@
 	)
 	(polyline
 		(pts
-			(xy 101.6 81.28) (xy 104.14 83.82)
+			(xy 80.01 73.66) (xy 82.55 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "073eef29-b871-4bba-9341-7962cead86fb")
-	)
-	(polyline
-		(pts
-			(xy 106.68 76.2) (xy 116.84 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "11bfd149-1ac5-41e7-9913-a2e84bbe2761")
 	)
 	(wire
 		(pts
@@ -2502,7 +2492,7 @@
 	)
 	(polyline
 		(pts
-			(xy 99.06 81.28) (xy 101.6 81.28)
+			(xy 77.47 73.66) (xy 80.01 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2542,7 +2532,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 83.82) (xy 114.3 83.82)
+			(xy 91.44 76.2) (xy 95.25 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2672,16 +2662,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 76.2) (xy 123.19 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb0561e1-a9f9-4791-a823-00c33769f942")
-	)
-	(wire
-		(pts
 			(xy 74.93 147.32) (xy 68.58 147.32)
 		)
 		(stroke
@@ -2689,16 +2669,6 @@
 			(type default)
 		)
 		(uuid "c163e46a-ea66-4d5a-bd5f-303341028dfc")
-	)
-	(wire
-		(pts
-			(xy 114.3 83.82) (xy 123.19 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c16c2e4f-b2ba-4b70-8bdc-6331aeb815f4")
 	)
 	(wire
 		(pts
@@ -2749,6 +2719,16 @@
 			(type default)
 		)
 		(uuid "e69af216-dc72-427c-824c-1c06865e56a8")
+	)
+	(wire
+		(pts
+			(xy 95.25 76.2) (xy 123.19 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e99f68b9-1460-4eec-9a23-2362be6c694c")
 	)
 	(wire
 		(pts
@@ -2881,7 +2861,7 @@
 		(uuid "3e7accaf-bf50-4d8c-b5c7-51f1a4587e50")
 	)
 	(label "LED"
-		(at 121.92 76.2 180)
+		(at 123.19 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3005,7 +2985,7 @@
 	)
 	(hierarchical_label "PWRON"
 		(shape output)
-		(at 113.03 83.82 180)
+		(at 91.44 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3170,7 +3150,7 @@
 	)
 	(hierarchical_label "3v3 Main EN"
 		(shape output)
-		(at 123.19 99.06 180)
+		(at 123.19 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3344,7 +3324,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 114.3 88.9 0)
+		(at 95.25 81.28 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3353,7 +3333,7 @@
 		(fields_autoplaced yes)
 		(uuid "2736433c-4b02-41bb-b19a-3398a70f6244")
 		(property "Reference" "#PWR049"
-			(at 114.3 95.25 0)
+			(at 95.25 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3362,7 +3342,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 114.3 93.98 0)
+			(at 95.25 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3370,7 +3350,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 88.9 0)
+			(at 95.25 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3379,7 +3359,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 88.9 0)
+			(at 95.25 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3388,7 +3368,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 114.3 88.9 0)
+			(at 95.25 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5238,7 +5218,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small")
-		(at 114.3 86.36 180)
+		(at 95.25 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5246,7 +5226,7 @@
 		(dnp no)
 		(uuid "f150d733-63ed-4094-b55f-1fec945bd59a")
 		(property "Reference" "R32"
-			(at 115.57 85.09 0)
+			(at 96.52 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5255,7 +5235,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 116.84 87.6299 0)
+			(at 97.79 80.0099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5264,7 +5244,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 114.3 86.36 0)
+			(at 95.25 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5273,7 +5253,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 114.3 86.36 0)
+			(at 95.25 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5282,7 +5262,7 @@
 			)
 		)
 		(property "Description" "Resistor, small symbol"
-			(at 114.3 86.36 0)
+			(at 95.25 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5291,7 +5271,7 @@
 			)
 		)
 		(property "LCSC" "C25744"
-			(at 115.57 85.09 0)
+			(at 96.52 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
