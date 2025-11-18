@@ -1653,7 +1653,7 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "Q"
+			(property "Reference" "Q3"
 				(at 6.35 1.2701 0)
 				(effects
 					(font
@@ -1662,7 +1662,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "Q_NMOS_SGD_8-pin"
+			(property "Value" "Vishay sir404dp, or SiR500DP"
 				(at 6.35 -1.2699 0)
 				(effects
 					(font
@@ -1671,8 +1671,8 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" ""
-				(at 5.08 3.81 0)
+			(property "Footprint" "Package_DFN_QFN:PQFN-8-EP_6x5mm_P1.27mm_Generic"
+				(at 5.08 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1690,7 +1690,7 @@
 				)
 			)
 			(property "Description" "N-MOSFET transistor, source/gate/drain"
-				(at 0 -3.556 0)
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1699,7 +1699,7 @@
 				)
 			)
 			(property "Sim.Device" "NMOS"
-				(at 0 -14.478 0)
+				(at 0 -17.145 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1708,7 +1708,7 @@
 				)
 			)
 			(property "Sim.Type" "VDMOS"
-				(at -0.254 -16.002 0)
+				(at 0 -19.05 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1717,7 +1717,25 @@
 				)
 			)
 			(property "Sim.Pins" "1,2,3=S 4=G 5,6,7,8=D"
-				(at 0.254 -12.446 0)
+				(at 0 -15.24 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Rotation Offset" "270"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "LCSC" "C3289487"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1931,63 +1949,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(hide yes)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5843,17 +5804,8 @@
 		(pin "4"
 			(uuid "3291a858-fef5-48b7-a25f-03e2993ce7ad")
 		)
-		(pin "7"
-			(uuid "e8fe66cb-e253-4b46-b67e-a8f46265f3d7")
-		)
-		(pin "8"
-			(uuid "a1b5620b-3cfa-4f49-92a3-cd48b6210e3d")
-		)
 		(pin "5"
 			(uuid "cfc83823-d940-4108-aaaa-40b75b315ef9")
-		)
-		(pin "6"
-			(uuid "5de6635a-29e2-47aa-ad52-4bd8c52c000b")
 		)
 		(instances
 			(project "Battery Charger"
