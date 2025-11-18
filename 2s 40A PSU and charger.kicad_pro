@@ -59,11 +59,26 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|117727145|120955000|1ac93a02-bc3b-4203-948d-1b63a892e13b|b87fc456-48aa-44af-8018-44eb7a1243bc",
-        "courtyards_overlap|120005000|120755000|4e83d9fd-68bc-4727-ba43-17a05ebf2dd8|b87fc456-48aa-44af-8018-44eb7a1243bc",
-        "courtyards_overlap|120117123|123325269|840abd69-ad1b-4031-8fed-53eeec7f6b50|b87fc456-48aa-44af-8018-44eb7a1243bc",
-        "courtyards_overlap|120195000|121045000|6eb92ce7-1f63-4f3e-9b3a-dd43e9eea689|b87fc456-48aa-44af-8018-44eb7a1243bc",
-        "courtyards_overlap|150309380|127183860|7c5dc31a-e077-41fe-be27-950350e1f96f|d45fca87-f82d-4623-b042-9a00efaf96cd"
+        [
+          "courtyards_overlap|117727145|120955000|1ac93a02-bc3b-4203-948d-1b63a892e13b|b87fc456-48aa-44af-8018-44eb7a1243bc",
+          ""
+        ],
+        [
+          "courtyards_overlap|120005000|120755000|4e83d9fd-68bc-4727-ba43-17a05ebf2dd8|b87fc456-48aa-44af-8018-44eb7a1243bc",
+          ""
+        ],
+        [
+          "courtyards_overlap|120117123|123325269|840abd69-ad1b-4031-8fed-53eeec7f6b50|b87fc456-48aa-44af-8018-44eb7a1243bc",
+          ""
+        ],
+        [
+          "courtyards_overlap|120195000|121045000|6eb92ce7-1f63-4f3e-9b3a-dd43e9eea689|b87fc456-48aa-44af-8018-44eb7a1243bc",
+          ""
+        ],
+        [
+          "courtyards_overlap|150309380|127183860|7c5dc31a-e077-41fe-be27-950350e1f96f|d45fca87-f82d-4623-b042-9a00efaf96cd",
+          ""
+        ]
       ],
       "meta": {
         "version": 2
@@ -75,16 +90,19 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "warning",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -95,9 +113,11 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -109,10 +129,13 @@
         "solder_mask_bridge": "warning",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
         "unconnected_items": "error",
@@ -125,6 +148,7 @@
         "min_clearance": 0.16,
         "min_connection": 0.16,
         "min_copper_edge_clearance": 0.2,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.3,
         "min_microvia_diameter": 0.2,
@@ -142,10 +166,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -255,6 +280,10 @@
   },
   "erc": {
     "erc_exclusions": [
+      [
+        "lib_symbol_mismatch|520700|673100|ca7b9f1a-813d-4e81-a30f-7a432b9d0897|00000000-0000-0000-0000-000000000000|||",
+        "I have to add pins labeled GND and have footprint"
+      ],
       [
         "pin_to_pin|1181100|685800|e9978583-6e37-4ce1-924b-3a6809f5587c|34a5c4fe-ba6d-41be-b694-6bdd4892e615|/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03|/eb3f183d-8bb1-43a5-a363-092ed67891e3/a57a0b4f-e246-497c-8d94-688647d8fd03|/eb3f183d-8bb1-43a5-a363-092ed67891e3/9cf42ac0-c980-41ef-957c-e7b7cc3eb205",
         ""
