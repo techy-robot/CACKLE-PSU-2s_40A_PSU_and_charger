@@ -2420,7 +2420,7 @@
 	(text_box "Override adaptor detection with MCU logic. Saves a mosfet for USB-C power control"
 		(exclude_from_sim no)
 		(at 39.37 104.14 0)
-		(size 19.05 12.7)
+		(size 19.05 13.97)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)

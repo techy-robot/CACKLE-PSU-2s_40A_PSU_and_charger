@@ -1063,6 +1063,16 @@
 		)
 		(uuid "3f3c4fca-7fcb-423d-8129-7e734e73e804")
 	)
+	(label "3v3_Main_EN"
+		(at 104.14 76.2 270)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "401be45f-90f1-4cba-a4d3-977dc8a8adf2")
+	)
 	(label "Charger_IADP"
 		(at 116.84 76.2 270)
 		(effects
@@ -1212,6 +1222,16 @@
 			(justify left bottom)
 		)
 		(uuid "cf7247c5-f83f-4e18-9cdd-0618b955fae7")
+	)
+	(label "3v3_Main_EN"
+		(at 115.57 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d8b0bd42-bf21-455b-8afc-9398fa486995")
 	)
 	(label "PWRON"
 		(at 127 76.2 270)
@@ -3537,6 +3557,16 @@
 				(justify right)
 			)
 		)
+		(pin "3v3 Main EN" output
+			(at 104.14 76.2 270)
+			(uuid "3f32a0e7-b313-4205-9f4f-f81734a288d7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3"
@@ -3649,7 +3679,7 @@
 	)
 	(sheet
 		(at 73.914 115.57)
-		(size 42.672 19.05)
+		(size 41.656 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -3713,6 +3743,16 @@
 		(pin "Always On PWR" input
 			(at 76.2 115.57 90)
 			(uuid "01d124a9-5e61-4905-a0ac-684ac88a569e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "3v3 Main EN" input
+			(at 115.57 132.08 0)
+			(uuid "73a64e3b-390a-4fab-a219-4a62b2c5d779")
 			(effects
 				(font
 					(size 1.27 1.27)

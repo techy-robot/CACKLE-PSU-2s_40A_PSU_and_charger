@@ -1158,6 +1158,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1986,14 +2136,14 @@
 		)
 		(uuid "9ad06a74-6283-42ab-bf5e-df64942987e3")
 	)
-	(text_box "Can't populate due to parts not being available from China. Will have to manually populate"
+	(text_box "Yes, boot is pulled high, yes this is also USB D+"
 		(exclude_from_sim no)
-		(at 74.93 163.83 0)
-		(size 29.21 11.43)
+		(at 201.93 22.86 0)
+		(size 24.13 13.97)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
@@ -2004,7 +2154,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "a76b8f18-5911-44e7-8381-7796d36751db")
+		(uuid "ad7b6c0b-12f7-47d1-aab1-9e5ca968af0c")
 	)
 	(text_box "Schematic symbol looks funky and reversed compared to the actual chip, however I have verified that the pins are correct"
 		(exclude_from_sim no)
@@ -2057,6 +2207,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2381da24-0d9d-46ab-a696-4fd1dc23f5a8")
+	)
+	(junction
+		(at 114.3 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57eb9fb6-4861-454b-8d62-5800cda30cbd")
 	)
 	(junction
 		(at 140.97 64.77)
@@ -2133,10 +2289,6 @@
 	(no_connect
 		(at 123.19 93.98)
 		(uuid "ebd5c181-f375-4ad5-92e3-76e7d7cf79a7")
-	)
-	(no_connect
-		(at 123.19 99.06)
-		(uuid "f29166ed-0ecb-40c1-bcb9-b1da8e0f1193")
 	)
 	(polyline
 		(pts
@@ -2290,6 +2442,16 @@
 	)
 	(wire
 		(pts
+			(xy 194.31 29.21) (xy 194.31 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4df89933-e8e7-4fd0-bffe-fccc7b8fd8e4")
+	)
+	(wire
+		(pts
 			(xy 29.21 50.8) (xy 29.21 54.61)
 		)
 		(stroke
@@ -2380,7 +2542,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 83.82) (xy 123.19 83.82)
+			(xy 113.03 83.82) (xy 114.3 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2527,6 +2689,16 @@
 			(type default)
 		)
 		(uuid "c163e46a-ea66-4d5a-bd5f-303341028dfc")
+	)
+	(wire
+		(pts
+			(xy 114.3 83.82) (xy 123.19 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c16c2e4f-b2ba-4b70-8bdc-6331aeb815f4")
 	)
 	(wire
 		(pts
@@ -2798,6 +2970,17 @@
 		)
 		(uuid "fb5296f5-0578-4c1f-a40f-c25320dd5215")
 	)
+	(hierarchical_label "D+{slash}BOOT"
+		(shape bidirectional)
+		(at 194.31 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "07bf1766-a136-4158-950f-2d8ff41e37b9")
+	)
 	(hierarchical_label "3.3v"
 		(shape input)
 		(at 140.97 54.61 90)
@@ -2919,6 +3102,28 @@
 		)
 		(uuid "8fcd4fb0-32c0-421e-b75b-2b323061dbb4")
 	)
+	(hierarchical_label "3.3v"
+		(shape input)
+		(at 194.31 29.21 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8ffc9486-294c-4b86-b40f-2d587926a582")
+		(property "Netclass" "Logic Pwr"
+			(at 195.58 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+			)
+		)
+	)
 	(hierarchical_label "RS485-"
 		(shape bidirectional)
 		(at 86.36 142.24 0)
@@ -2962,6 +3167,17 @@
 			(justify left)
 		)
 		(uuid "b0acf7bf-1536-4b78-a5c4-4ab6f1c07861")
+	)
+	(hierarchical_label "3v3 Main EN"
+		(shape output)
+		(at 123.19 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c2419a89-daf5-4690-9b6e-c334369cee61")
 	)
 	(hierarchical_label "D+{slash}BOOT"
 		(shape bidirectional)
@@ -3127,6 +3343,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 114.3 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2736433c-4b02-41bb-b19a-3398a70f6244")
+		(property "Reference" "#PWR049"
+			(at 114.3 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "10ae6268-f7eb-4f37-8ce8-3f78d0a0903a")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "#PWR049")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:LED")
 		(at 76.2 30.48 180)
 		(unit 1)
@@ -3285,6 +3567,84 @@
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
 					(reference "R11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 194.31 41.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3de055a9-bbe2-44cb-a7eb-b1281f8e664d")
+		(property "Reference" "SW1"
+			(at 194.818 42.164 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Mitsumi R-667996"
+			(at 172.466 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Misumi switches:R-667995_MIT"
+			(at 189.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 189.23 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 194.31 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C4365007"
+			(at 192.532 44.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3e29c559-4b3a-4ca7-b1e1-4f1d7053e41e")
+		)
+		(pin "2"
+			(uuid "7f567572-0475-4900-9dca-0a523ea8a149")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3974,6 +4334,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small")
+		(at 194.31 34.29 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "96e21050-5882-47f0-a02c-674d75c74b6c")
+		(property "Reference" "R13"
+			(at 195.58 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 196.85 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 194.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 194.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 194.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 195.58 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b2266e3c-f26a-4d18-8c13-e828f7152c0e")
+		)
+		(pin "2"
+			(uuid "ef2698bb-5e9b-4877-94c7-1b4edc6487e3")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "R13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 143.51 58.42 90)
 		(unit 1)
@@ -4224,7 +4662,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "9e07bccd-57c1-49b0-8355-9b6707aba6b9")
 		(property "Reference" "U5"
 			(at 57.912 150.114 0)
@@ -4793,6 +5231,84 @@
 			(project "2s 40A PSU and charger"
 				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
 					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 114.3 86.36 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f150d733-63ed-4094-b55f-1fec945bd59a")
+		(property "Reference" "R32"
+			(at 115.57 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "10k"
+			(at 116.84 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small symbol"
+			(at 114.3 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25744"
+			(at 115.57 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e784e5d5-5a63-4d4d-8281-f2b0a2c71b32")
+		)
+		(pin "2"
+			(uuid "e02bdce9-0635-44ae-b78c-db1b81563ccf")
+		)
+		(instances
+			(project "2s 40A PSU and charger"
+				(path "/eb3f183d-8bb1-43a5-a363-092ed67891e3/77be5f81-4ede-42b7-b1c4-fa657e9379ac"
+					(reference "R32")
 					(unit 1)
 				)
 			)
