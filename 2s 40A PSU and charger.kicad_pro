@@ -638,9 +638,15 @@
       "/Bat Cell 1": [
         "Logic Pwr"
       ],
-      "/Battery Balancer/+BAT": "High Current",
-      "/Battery Balancer/-BAT": "High Current",
-      "/Battery Balancer/Bat Cell 1": "Logic Pwr",
+      "/Battery Balancer/+BAT": [
+        "High Current"
+      ],
+      "/Battery Balancer/-BAT": [
+        "High Current"
+      ],
+      "/Battery Balancer/Bat Cell 1": [
+        "Logic Pwr"
+      ],
       "/Battery Balancer/Low": [
         "Logic Pwr"
       ],
@@ -650,25 +656,45 @@
       "/Battery Balancer/Up": [
         "Logic Pwr"
       ],
-      "/Battery Charger/Always On PWR": "Logic Pwr",
-      "/Battery Charger/IN": "USB-C pwr",
-      "/Battery Charger/MCU3.3v": "Logic Pwr",
-      "/Battery Charger/MOTORPWR": "High Current",
+      "/Battery Charger/Always On PWR": [
+        "Logic Pwr"
+      ],
+      "/Battery Charger/IN": [
+        "USB-C pwr"
+      ],
+      "/Battery Charger/MCU3.3v": [
+        "Logic Pwr"
+      ],
+      "/Battery Charger/MOTORPWR": [
+        "High Current"
+      ],
       "/Battery Charger/REGN": [
         "Logic Pwr"
       ],
-      "/Connectors/3.3v": "Charge Current",
-      "/Connectors/CC1": "Default",
-      "/Connectors/CC2": "Default",
-      "/MCU/3.3v": "Logic Pwr",
+      "/Connectors/3.3v": [
+        "Charge Current"
+      ],
+      "/Connectors/CC1": [
+        "Default"
+      ],
+      "/Connectors/CC2": [
+        "Default"
+      ],
+      "/MCU/3.3v": [
+        "Logic Pwr"
+      ],
       "Always On 3v3": [
         "Logic Pwr"
       ],
       "Always On PWR": [
         "Logic Pwr"
       ],
-      "GND": "Logic Power",
-      "GNDPWR": "High Current GND",
+      "GND": [
+        "Logic Power"
+      ],
+      "GNDPWR": [
+        "High Current GND"
+      ],
       "MOTORPWR": [
         "High Current"
       ],
@@ -702,36 +728,54 @@
       "Net-(D3-A)": [
         "Logic Pwr"
       ],
-      "Net-(D5-K)": "Logic Pwr",
-      "Net-(L2-Pad2)": "High Current",
+      "Net-(D5-K)": [
+        "Logic Pwr"
+      ],
+      "Net-(L2-Pad2)": [
+        "High Current"
+      ],
       "Net-(NT8-Pad1)": [
         "Logic Pwr"
       ],
-      "Net-(Q1-G)": "USB-C pwr",
+      "Net-(Q1-G)": [
+        "USB-C pwr"
+      ],
       "Net-(Q1-S)": [
         "USB-C pwr"
       ],
       "Net-(Q2-D)": [
         "USB-C pwr"
       ],
-      "Net-(Q2-S)": "USB-C pwr",
-      "Net-(Q3-S)": "High Current",
+      "Net-(Q2-S)": [
+        "USB-C pwr"
+      ],
+      "Net-(Q3-S)": [
+        "High Current"
+      ],
       "Net-(Q4-D)": [
         "Charge Current"
       ],
-      "Net-(Q4-G)": "Charge Current",
+      "Net-(Q4-G)": [
+        "Charge Current"
+      ],
       "Net-(Q4-S)": [
         "Charge Current"
       ],
-      "Net-(Q6-S)": "High Current",
+      "Net-(Q6-S)": [
+        "High Current"
+      ],
       "Net-(U1-BAT)": [
         "Logic Pwr"
       ],
       "Net-(U2-SW)": [
         "Charge Current"
       ],
-      "Net-(U3-VCC)": "Logic Power",
-      "Net-(U4-VIN)": "Logic Pwr",
+      "Net-(U3-VCC)": [
+        "Logic Power"
+      ],
+      "Net-(U4-VIN)": [
+        "Logic Pwr"
+      ],
       "USBPWR": [
         "USB-C pwr"
       ]

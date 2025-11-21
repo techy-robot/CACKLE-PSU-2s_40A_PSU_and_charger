@@ -17885,7 +17885,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Value" "2.7uH"
+		(property "Value" "3.3uH"
 			(at -0.2 1.7 90)
 			(layer "B.Fab")
 			(uuid "7035043d-fd7e-436e-82aa-3077fb367791")
@@ -17925,7 +17925,7 @@
 				(justify mirror)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2041573"
 			(at 0 0 270)
 			(unlocked yes)
 			(layer "B.Fab")

@@ -946,10 +946,10 @@
 		)
 		(uuid "5f28dac7-f4c2-451d-bb7e-eeeea445a043")
 	)
-	(text_box "Inductor calculation: L = (V_OUT * (V_IN - V_OUT)) / (V_IN * Delta_I_L * f_sw)\n\nPeak Inductance: I_L_PEAK = I_LOAD + (Delta_I_L / 2)\n\nInputs:\nDelta_I_L 35% of max current 2 amps: 0.7.\nf_sw: 1.1mhz\nV_IN: 9v\n\nValues:\n2.7uH value\n2.35+ A peak current\n<100mO resistance"
+	(text_box "Inductor calculation: L = (V_OUT * (V_IN - V_OUT)) / (V_IN * Delta_I_L * f_sw)\n\nPeak Inductance: I_L_PEAK = I_LOAD + (Delta_I_L / 2)\n\nInputs:\nDelta_I_L 35% of max current 2 amps: 0.7.\nf_sw: 1.1mhz\nV_IN: 9v\n\nValues:\n2.7uH value\n2.35+ A peak current\n<100mO resistance\n\nAlternatives:\n- Delta_I_L 42% max at 0.85A, would get a 2.2uH value\n- Delta_I_L 28.5% max at 0.57A, would get a 3.3uH value"
 		(exclude_from_sim no)
-		(at 233.045 17.145 0)
-		(size 36.195 38.1)
+		(at 241.3 16.51 0)
+		(size 36.195 48.26)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1659,7 +1659,7 @@
 				)
 			)
 		)
-		(property "Value" "2.7uH"
+		(property "Value" "3.3uH"
 			(at 234.95 73.914 90)
 			(effects
 				(font
@@ -1694,7 +1694,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C2041573"
 			(at 232.41 76.2 90)
 			(effects
 				(font
